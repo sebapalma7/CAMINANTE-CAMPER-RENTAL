@@ -4,8 +4,16 @@
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
 }
-
+/* VARIABLES */
+$orange: #e2a359;
 
 @import "header";
 @import "footer";
 @import "index";
+@import "acercade";
+@import "camper";
+@import "fotos";
+@import "preguntas";
+@import "terms&conditions";
+@import "contacto";
+

@@ -1,0 +1,83 @@
+#fotos-main {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../imagenes/bannerfotos.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 10vw 0 10vw;
+        height: 50vh;
+        width: auto;
+        border-radius: 0.5rem;
+        h1 {
+            width: 60%;
+            color: aliceblue;
+        }
+    }
+    h2 {
+        font-size: 40px;
+        text-decoration: underline;
+        text-decoration-color: #e2a359;
+        text-underline-offset: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        margin: 10vh;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 80%;
+        margin: auto;
+        grid-gap: 10px;
+        margin-bottom: 20vh;
+        img{
+            width: 100%;
+            height: 100%;
+        
+        }
+        a:hover img {
+            transform: scale(1.3);
+            transition: transform 0.5s;
+        }
+    }
+    .light-box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        transition: transform .3s ease-in-out;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        img {
+            width: 70%;
+        }
+        &:target {
+            transform: scale(1);
+        }
+        .close {
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: #e2a359;
+            color: white;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+        .next {
+            margin: 40px;
+        }
+    }
+}
