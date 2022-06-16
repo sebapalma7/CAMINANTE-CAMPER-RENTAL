@@ -8,24 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="imagenes/CAMINANTE CAMPER RENTAL LOGO.png" alt="" id="logo"></a>
-        <nav id="nav">
-            <span class="pagina-actual"><a href="index.html">INICIO</a></span>
-            <span><a href="paginas/acercade.html">ACERCA DE</a></span>
-            <span><a href="paginas/camper.html">CAMPER</a></span>
-            <span><a href="paginas/fotos.html">FOTOS</a></span>
-            <span><a href="paginas/preguntas.html">PREGUNTAS FRECUENTES</a></span>
-            <span><a href="paginas/contacto.html">CONTACTO</a></span>
-        </nav>
-    </header>
-    <main class="index-main">
-        <section class="banner">
-            <h1>VIAJÁ POR LA PATAGONIA EN MOTORHOME</h1>
-        </section>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <a href="index.html"><img src="imagenes/CAMINANTE CAMPER RENTAL LOGO.png" alt="" id="logo"></a>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link active" id="current" aria-current="page">INICIO</a></li>
+            <li class="nav-item"><a href="paginas/acercade.html" class="nav-link">ACERCA DE</a></li>
+            <li class="nav-item"><a href="paginas/camper.html" class="nav-link">CAMPER</a></li>
+            <li class="nav-item"><a href="paginas/fotos.html" class="nav-link">FOTOS</a></li>
+            <li class="nav-item"><a href="paginas/preguntas.html" class="nav-link">PREGUNTAS FRECUENTES</a></li>
+            <li class="nav-item"><a href="paginas/contacto.html" class="nav-link">CONTACTO</a></li>
+          </ul>
+        </header>
+      </div>
+    <main class="container" id="index-main">
+        <div class="p-4 p-md-5 mb-4 text-white rounded " id="index-banner">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic">VIAJÁ POR LA PATAGONIA EN MOTORHOME</h1>
+              <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ea similique provident commodi sint asperiores enim fuga tempore soluta dolore.</p>
+              <p class="lead mb-0"><a href="paginas/acercade.html" class="text-white fw-bold">Continuar leyendo...</a></p>
+            </div>
+        </div>
         <section>
             <article class="article-one">
                 <img src="imagenes/fotos/indexfoto1.jpg" alt="imagen de caper ccr">
@@ -80,5 +90,6 @@
             </a>
         </div>
     </footer>
+    <script src="js/boostrap.js"></script>
 </body>
 </html>
