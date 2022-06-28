@@ -39,8 +39,7 @@
             align-items: center;
             padding: 20px;
             p {
-                font-size: 2vw;
-                font-weight: 400;
+                @include fonts (2vw, 400);
                 margin: 20px;
             } 
             a {

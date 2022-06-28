@@ -7,10 +7,8 @@
         margin: 20vh;
     }
     .pregunta-derecha {
-        display: flex;
-        flex-direction: column;
+        @extend .pregunta-izquierda;
         align-items:flex-end;
-        margin: 20vh;
         text-align: right;
     }
     article {

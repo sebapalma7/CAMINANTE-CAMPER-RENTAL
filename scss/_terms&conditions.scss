@@ -11,8 +11,7 @@
             margin: 10vh;
         }
         p {
-            font-size: 20px;
-            font-weight: 800;
+            @include fonts (20px, 800);
         }
     }
 }

@@ -7,6 +7,14 @@
 /* VARIABLES */
 $orange: #e2a359;
 
+/* mixins */
+@mixin fonts ($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+/* import */
+
 @import "header";
 @import "footer";
 @import "index";
